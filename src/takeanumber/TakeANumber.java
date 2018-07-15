@@ -33,6 +33,8 @@ public class TakeANumber {
                 serves++;
             } else if (s.equals("CLOSE")) {
                 System.out.println(takes+" "+(takes-serves)+" "+(number+1));
+                takes=0;
+                serves=0;
             }
         }while (!s.equals("EOF"));
     }
